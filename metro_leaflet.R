@@ -5,7 +5,7 @@
 
 #creado en  R version 3.5.2 (10-04-2022)
 
-setwd("/home/jabp/Documentos/")
+setwd("/Escirbir/tu/ruta/de Trabajo/")
 getwd()
 
 rm(list=ls())
@@ -18,19 +18,19 @@ require(pacman)
 p_load(leaflet,leaflet.extras,mapview,questionr,janitor,leafem,rgdal,raster,plyr,dplyr,
        data.table,readr, tidyverse,htmltools,htmlwidgets,mapview,sp,sf,readxl)
 
-lineas <- readOGR("/home/jabp/R/TallerR/MapasR/Metro/stcmetro_shp/STC_Metro_lineas_utm14n.shp")
+lineas <- readOGR("/Escirbir/tu/ruta/de Trabajo/STC_Metro_lineas_utm14n.shp")
 
 names(lineas)
 unique(lineas@data)
 head(lineas[1,])
 
 
-estaciones <- readOGR("/home/jabp/R/TallerR/MapasR/Metro/stcmetro_shp/STC_Metro_estaciones_utm14n.shp")
+estaciones <- readOGR("/Escirbir/tu/ruta/de Trabajo/STC_Metro_estaciones_utm14n.shp")
 
 names(estaciones)
 tail(estaciones)
 
-cdmx <- readOGR("/home/jabp/R/TallerR/MapasR/CDMX/alcaldias.shp")##Poligonos de la cdmx
+cdmx <- readOGR("/Escirbir/tu/ruta/de Trabajo/alcaldias.shp")##Poligonos de la cdmx
 
 names(cdmx)
 head(cdmx)
@@ -82,21 +82,10 @@ title <- tags$div(
 # Sintaxis:
 # <tag_html propiedad1 = 'propiedad'>Contenido dentro de una página</tag_htlm>
 
+#agregamos imagen de la dirección url
 html_legend<- "<img src='https://www.metro.cdmx.gob.mx/storage/app/uploads/public/60b/e5f/712/thumb_8202_640_360_0_0_crop.jpeg' width=180px height=100px>"
 
 
-leaflet(data=cdmx)%>%
-  addTiles()%>% addPolylines(data = lineas,color=rainbow(12))%>% 
-  addCircles(data=estaciones,color = "black",label = estaciones$NOMBRE)
-
-set.seed(1234)
-# Agregamos la variable numérica al shape lineas Variable numerica
-lineas$numerica <- runif(nrow(lineas), min = 0, max = 1)
-palnumeric <- colorNumeric("rainbow", domain = lineas$numerica)
-
-
-popup <- paste0("<b>", "Nombre alcaldia: ", "</b>", as.character(cdmx$alcaldia), 
-                "<br>", "<b>", "Estacion: ", "</b>", as.character(estaciones$NOMBRE), "<br>")
                    #1       #2     #3         #4       #5        #6       #7        #8       #9  
 colorLinea<- c("#FF1493","blue","#EEDD82","#00FFFF","yellow","#FF0000","#FF7F00","#008B00","#8B4513","#A020F0","#C0FF3E","#CDAD00")
 
