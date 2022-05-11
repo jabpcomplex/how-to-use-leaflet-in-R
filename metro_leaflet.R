@@ -92,9 +92,8 @@ colorLinea<- c("#FF1493","blue","#EEDD82","#00FFFF","yellow","#FF0000","#FF7F00"
 leaflet(cdmx)%>%
   addTiles()%>%
   addProviderTiles(providers$CartoDB.Positron)%>%  #Wikimedia
-  addPolylines(data = lineas, color =colorLinea)%>% # ~palnumeric(lineas$numerica))%>%  #Lineas Metro 
-  #addCircles(data=estaciones,color = "black",label = ~estaciones$NOMBRE )%>% #labels2
-  addCircles(data=estaciones,color = "black",label = ~NOMBRE )%>% 
+  addPolylines(data = lineas, color =colorLinea)%>% #lineas de metro
+  addCircles(data=estaciones,color = "black",labels2 = ~NOMBRE )%>% 
   addPolygons(data=cdmx,
               weight = 0.5,  # Tamaño del contorno de la CDMX 
               opacity = 2,
@@ -108,8 +107,7 @@ leaflet(cdmx)%>%
                 dashArray = 5, #contorno alcaldia
                 fillOpacity = 0.1, #Opacidad cuando se ilumina 
                 bringToFront = TRUE),
-              label = ~cdmx$alcaldia, #labels
-              #label = ~alcaldia,
+              label = labels,
               labelOptions = labelOptions(
                 style = list("font-weight" = "normal", padding = "3px 3px"),
                 textsize = "8px",
