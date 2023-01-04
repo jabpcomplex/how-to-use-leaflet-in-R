@@ -2,7 +2,7 @@
 #Ubicación de líneas y estaciones del Sistema de Transporte Colectivo Metro
 
 #Geolocalización de líneas y estaciones del Sistema de Transporte Colectivo Metro
-
+# Creado por jabpcomplex (julio alberto)
 #creado en  R version 3.5.2 (10-04-2022)
 
 setwd("/Escirbir/tu/ruta/de Trabajo/")
@@ -18,19 +18,19 @@ require(pacman)
 p_load(leaflet,leaflet.extras,mapview,questionr,janitor,leafem,rgdal,raster,plyr,dplyr,
        data.table,readr, tidyverse,htmltools,htmlwidgets,mapview,sp,sf,readxl)
 
-lineas <- readOGR("/Escirbir/tu/ruta/de Trabajo/STC_Metro_lineas_utm14n.shp")
+lineas <- readOGR("/path/STC_Metro_lineas_utm14n.shp")
 
 names(lineas)
 unique(lineas@data)
 head(lineas[1,])
 
 
-estaciones <- readOGR("/Escirbir/tu/ruta/de Trabajo/STC_Metro_estaciones_utm14n.shp")
+estaciones <- readOGR("/path/Trabajo/STC_Metro_estaciones_utm14n.shp")
 
 names(estaciones)
 tail(estaciones)
 
-cdmx <- readOGR("/Escirbir/tu/ruta/de Trabajo/alcaldias.shp")##Poligonos de la cdmx
+cdmx <- readOGR("/path/alcaldias.shp")##Poligonos de la cdmx
 
 names(cdmx)
 head(cdmx)
