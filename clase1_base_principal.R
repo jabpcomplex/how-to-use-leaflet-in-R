@@ -33,5 +33,3 @@ mapa2 <- leaflet() %>%
   addProviderTiles(providers$Stamen.Toner)
 
 mapa2  # imprime el mapa
-
- saveWidget(mapa, file="testing.html")
