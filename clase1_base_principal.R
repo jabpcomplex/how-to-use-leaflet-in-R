@@ -1,10 +1,7 @@
-
-#Ubicación de líneas y estaciones del Sistema de Transporte Colectivo Metro
-#Geolocalización de líneas y estaciones del Sistema de Transporte Colectivo Metro
-#creado en  R version 4.2.2 (1-01-2022)
+#creado por jabpcomplex en  R version 4.2.2 (1-01-2023) 
 
 #agregamos ruta de trabajo
-setwd("/home/jabp/Programacion/R-scripts/TallerR/MapasR/leaflet/")
+setwd("/path/")
 
 
 #instale la libreria leaflet
@@ -36,3 +33,5 @@ mapa2 <- leaflet() %>%
   addProviderTiles(providers$Stamen.Toner)
 
 mapa2  # imprime el mapa
+
+ saveWidget(mapa, file="testing.html")
