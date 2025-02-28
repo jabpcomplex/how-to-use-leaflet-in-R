@@ -26,7 +26,13 @@ En la carpeta CDMX encontramos los archivos georeferenciados correspondientes a 
 
 ![metro de la ciudad de mexico](https://www.mexicodesconocido.com.mx/wp-content/uploads/2018/08/mapa-metro-cdmx-grande-web-769x1024.jpg)
 
-[![Web|100](./Captura de pantalla de 2022-05-11 14-21-46.png)](https://github.com/jabpcomplex/how-to-use-leaflet-in-R)
+<!--
+<p align="center">
+<img src="https://raw.githubusercontent.com/jabpcomplex/how-to-use-leaflet-in-R/refs/heads/main/Captura%20de%20pantalla%20de%202022-05-11%2014-21-46.png">
+</p>
+-->
+
+[https://raw.githubusercontent.com/jabpcomplex/how-to-use-leaflet-in-R/refs/heads/main/Captura%20de%20pantalla%20de%202022-05-11%2014-21-46.png](https://raw.githubusercontent.com/jabpcomplex/how-to-use-leaflet-in-R/refs/heads/main/Captura%20de%20pantalla%20de%202022-05-11%2014-21-46.png)
 
 
 
