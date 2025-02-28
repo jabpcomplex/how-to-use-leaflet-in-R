@@ -2,16 +2,18 @@
 
 ¡Bienvenido a este repositorio! Aquí aprenderás a crear un **mapa interactivo** en HTML utilizando el lenguaje **R** y la librería **Leaflet**. Este proyecto está enfocado en visualizar las líneas del Sistema de Transporte Colectivo Metro de la Ciudad de México (CDMX) de manera dinámica y profesional.
 
----
+
 
 ## 🌟 ¿Qué encontrarás aquí?
 
-- **Código en R**: Un script completo para generar un mapa interactivo con las 12 líneas del Metro de la CDMX.
-- **Datos georreferenciados**: Archivos shapefile (`.shp`) con la información geográfica de las líneas del Metro y la Ciudad de México.
+- **Código en R**:
+   - 1. Un script completo para generar un mapa interactivo con las 12 líneas del Metro de la CDMX.
+   - 2. Un script completo para generar un mapa interactivo con las cámaras de C5 en la colonia XOTEPINGO
+- **Datos georreferenciados**: Archivos shapefile (`.shp`) con la información geográfica de las líneas del Metro y la colonia XOTEPINGO Ciudad de México.
 - **Resultado visual**: Un mapa interactivo que puedes abrir en cualquier navegador web.
 - **Explicaciones paso a paso**: Guías detalladas para que cualquier persona, incluso sin experiencia previa, pueda replicar el proyecto.
 
----
+
 
 ## 🚀 ¿Por qué usar Leaflet en R?
 
@@ -21,7 +23,6 @@
 - **Interactividad**: Los mapas generados permiten zoom, desplazamiento y clics para obtener más información.
 - **Personalización**: Puedes agregar capas, marcadores, polígonos y mucho más.
 
----
 
 ## 🛠️ Requisitos previos
 
@@ -31,7 +32,7 @@ Antes de empezar, asegúrate de tener instalado:
 - [RStudio](https://www.rstudio.com/)
 - El paquete `leaflet` de R (instalación en el siguiente paso).
 
----
+
 
 ## 📦 Instalación y configuración
 
@@ -47,11 +48,11 @@ Si deseas trabajar con los archivos locales, clona el repositorio en tu computad
 
 ```shell
 
-    git clone https://github.com/jabpcomplex/Crear-mapa-interactivo-lenguaje-R.git
+    git clone https://github.com/jabpcomplex/how-to-use-leaflet-in-R.git
 
 ```  
 
-3. **Explora los archivos:**
+3. **Explora los archivos sobre METRO:**
 
 En la carpeta CDMX encontrarás los archivos georreferenciados de la Ciudad de México.
 
@@ -66,6 +67,15 @@ El script se divide en tres partes principales:
 <p align="center">
 <img src="https://raw.githubusercontent.com/jabpcomplex/how-to-use-leaflet-in-R/refs/heads/main/Captura%20de%20pantalla%20de%202022-05-11%2014-21-46.png">
 </p>
+
+---
+
+# 🗺️ Mapa Interactivo con la instalación de  Cámaras del  C5 en la Colonia XOTEPINGO
+
+<p align="center">
+<img src="https://raw.githubusercontent.com/jabpcomplex/how-to-use-leaflet-in-R/refs/heads/main/xotepingo_html.png">
+</p>
+---
 
 ## 🎯 ¿Por qué este repositorio es útil?
 1. Aprendizaje: Ideal para quienes quieren aprender a crear mapas interactivos con R.
